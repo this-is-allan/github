@@ -9,6 +9,7 @@ declare module "styled-components" {
   export interface DefaultTheme {
     primaryColor: string;
     secondaryColor: string;
+    body: string;
     font: Font;
   }
 }
@@ -16,9 +17,10 @@ declare module "styled-components" {
 export const lightTheme: DefaultTheme = {
   primaryColor: "#333",
   secondaryColor: "#666",
+  body: "#fff",
   font: {
     family: "'Open Sans', sans-serif;",
-    color: '#000000',
+    color: '#23272a',
   }
 };
 
