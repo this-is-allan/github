@@ -1,9 +1,9 @@
+import UserList from "../../organisms/UserList";
+
 function Home() {
   return (
     <div>
-      <p>
-        Edit <code>src/pages/Home/index.tsx</code> and save to reload.
-      </p>
+      <UserList />
     </div>
   );
 }
