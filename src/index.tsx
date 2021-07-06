@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import './index.css';
-import reportWebVitals from './reportWebVitals';
 
 import Home from './pages/Home';
 
