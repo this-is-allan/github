@@ -3,8 +3,8 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 interface ImageProps {
   image: {
-    alt: string;
-    src: string;
+    alt?: string;
+    src: string | undefined;
   }
 }
 

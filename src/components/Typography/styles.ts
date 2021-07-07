@@ -14,7 +14,7 @@ export const Text = styled.div.attrs(
     as: as || (heading && `h${level}`),
   })
 )<TypographyPropsType>`
-  color: ${(props) => props.color || props.theme.font?.color || '#030a12'};
+  color: ${(props) => props.color || props.theme.font.color};
   font-weight: ${({ weight }) => weight};
   font-size: ${({ level = 2 }) => fontSizeInPX(level - 1)};
 `;

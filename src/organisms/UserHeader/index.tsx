@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useHistory, useParams } from "react-router-dom";
 import { ArrowBackThick, Hashtag, Location, Star, ShippingBoxV1 } from 'akar-icons';
 
+import Image from '../../components/Image';
 import Button from "../../components/Button";
 import Tag from "../../components/Tag";
 import Loading from "../../components/Loading";
@@ -64,7 +65,7 @@ const UserHeader = () => {
           </div>
           <div className="owner">
             <div className="avatar">
-              <img src={user?.avatar_url} alt="avatar" />
+              <Image image={{ src: user?.avatar_url, alt: 'avatar'}} />
             </div>
           </div>
           <div className="actions">
