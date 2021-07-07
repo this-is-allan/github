@@ -4,13 +4,9 @@ import UserList from "../../organisms/UserList";
 
 function Home() {
   return (
-    <div>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <div style={{ width: '90vw' }}>
-          <Title className="mb-4 mt-4" heading>Lista de usuários</Title>
-          <UserList />
-        </div>
-      </div>
+    <div className="col-10 col-offset-1">
+      <Title className="mb-4 mt-4" heading>Lista de usuários</Title>
+      <UserList />
     </div>
   );
 }

@@ -16,23 +16,20 @@ const defaultOptions = {
 
 function Page404() {
   return (
-    <div className="row">
-      <div className="col-4 col-offset-4">
-        <Lottie options={defaultOptions}
-          height={250}
-          width="100%"
-          isStopped={false}
-          isPaused={false}
-        />
+    <div className="col-4 col-offset-4">
+      <Lottie options={defaultOptions}
+        height={250}
+        width="100%"
+        isStopped={false}
+        isPaused={false}
+      />
 
-        <div className="text-center">
-          <Link to="/">
-            <Button>
-              Voltar para a home
-            </Button>
-          </Link>
-        </div>
-
+      <div className="text-center">
+        <Link to="/">
+          <Button>
+            Voltar para a home
+          </Button>
+        </Link>
       </div>
     </div>
   );
