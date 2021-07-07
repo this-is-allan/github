@@ -1,3 +1,5 @@
+import { memo } from 'react';
+
 import Image from '../Image';
 
 import { CardContainer } from './styles';
@@ -19,4 +21,4 @@ const Card = ({ image, title }: CardProps) => {
   )
 }
 
-export default Card
+export default memo(Card)
