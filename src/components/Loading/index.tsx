@@ -1,6 +1,6 @@
 import Lottie from 'react-lottie';
 
-import animationData from './loading-unicorn.json'
+import animationData from '../../lotties/loading-unicorn.json'
 
 const defaultOptions = {
   loop: true,
