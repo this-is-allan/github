@@ -14,8 +14,8 @@ const defaultOptions = {
 const Loading = () => {
   return (
     <Lottie options={defaultOptions}
-      height={400}
-      width={400}
+      height={250}
+      width={250}
       isStopped={false}
       isPaused={false}
     />
