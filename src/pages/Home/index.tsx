@@ -1,3 +1,5 @@
+import { Title } from "../../components/Typography";
+
 import UserList from "../../organisms/UserList";
 
 function Home() {
@@ -5,7 +7,7 @@ function Home() {
     <div>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div style={{ width: '90vw' }}>
-          <h1 style={{ padding: '.8rem 0' }}>Lista de usuários</h1>
+          <Title className="mb-4 mt-4" heading>Lista de usuários</Title>
           <UserList />
         </div>
       </div>

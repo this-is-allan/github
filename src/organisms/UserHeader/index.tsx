@@ -5,11 +5,11 @@ import { ArrowBackThick, Hashtag, Location, Star, ShippingBoxV1 } from 'akar-ico
 import Button from "../../components/Button";
 import Tag from "../../components/Tag";
 import Loading from "../../components/Loading";
+import { Title } from "../../components/Typography";
 
 import { User } from "../../utils/types";
 
 import { UserHeaderContainer } from "./styles"
-
 interface ParamType {
   slug: string;
 }
@@ -41,7 +41,7 @@ const UserHeader = () => {
       : (
         <>
           <div className="main">
-            <h1 style={{ padding: '.8rem 0' }}>{user?.name}</h1>
+            <Title className="mb-2">{user?.name}</Title>
 
             <div className="main-items">
               <Tag>

@@ -1,28 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyles = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+import Utils from './utils';
+import ResetCSS from './reset';
 
-  html {
-    scroll-behavior: smooth;
-  }
+export const GlobalStyles = createGlobalStyle`
+  ${Utils}
+  ${ResetCSS}
 
   body {
     font-family: ${({ theme }) => theme.font.family};
     color: ${({ theme }) => theme.font.color};
     background: ${({ theme }) => theme.body};
-  }
-
-  a {
-    text-decoration: none;
-  
-    &:focus, &:hover, &:visited, &:link, &:active {
-      text-decoration: none;
-   }
   }
 
   .users-list-grid {
