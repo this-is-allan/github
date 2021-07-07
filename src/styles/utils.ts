@@ -1,6 +1,18 @@
 import { css } from 'styled-components';
 
 const Utils = css`
+  .text {
+    &-left {
+      text-align: left;
+    }
+    &-center {
+      text-align: center;
+    }
+    &-right {
+      text-align: right;
+    }
+  }
+
   .mt {
     &-0 {
       margin-top: 0;

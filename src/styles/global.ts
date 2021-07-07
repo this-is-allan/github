@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle`
   ${ResetCSS}
 
   body {
+    min-height: 100vh;
     font-family: ${({ theme }) => theme.font.family};
     color: ${({ theme }) => theme.font.color};
     background: ${({ theme }) => theme.body};
