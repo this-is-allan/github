@@ -41,11 +41,18 @@ export const CardContainer = styled.div`
     width: 100%;
     height: 260px;
 
-    img {
-      width: 100%;
+    span {
       height: 100%;
-      object-fit: cover;
-      border-radius: .8rem .8rem 0 0;
+      min-width: 100%;
+      position: relative;
+      display: block;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: .8rem .8rem 0 0;
+      }
     }
   }
 
