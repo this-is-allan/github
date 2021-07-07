@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useHistory, useParams } from "react-router-dom";
-import { ArrowBackThick, Hashtag, Location, Star, ShippingBoxV1 } from 'akar-icons';
+import { LinkOut, ArrowBackThick, Hashtag, Location, Star, ShippingBoxV1 } from 'akar-icons';
 
 import Image from '../../components/Image';
 import Button from "../../components/Button";
@@ -72,6 +72,11 @@ const UserHeader = () => {
             <Button onClick={() => history.goBack()}>
               <ArrowBackThick size={18} color="#9c9c9b" />
             </Button>
+            <a href={user?.html_url} target="_blank" rel="noreferrer">
+              <Button label="Acessar Github">
+                <LinkOut size={18} color="#9c9c9b" />
+              </Button>
+            </a>
           </div>
         </>
       )}

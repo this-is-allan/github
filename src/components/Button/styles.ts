@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ButtonContainer = styled.button`
   padding: .7rem .9rem;
-  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 700;
   background: #fff;
@@ -12,10 +11,14 @@ export const ButtonContainer = styled.button`
   cursor: pointer;
   position: relative;
   display: inline-flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: space-around;
   transition: border .2s cubic-bezier(.06,.67,.37,.99);
   appearance: none;
+
+  svg + span {
+    margin-left: 5px;
+  }
 
   &:hover {
     border: 2px solid #e6e4e1;

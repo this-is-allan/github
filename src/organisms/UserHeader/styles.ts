@@ -40,7 +40,10 @@ export const UserHeaderContainer = styled.div`
   .actions {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
     width: 100%;
+
+    a, button:not(:first-child) {
+      margin-left: 10px;
+    }
   }
 `;

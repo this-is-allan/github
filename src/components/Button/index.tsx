@@ -1,14 +1,16 @@
 import { ButtonContainer } from './styles';
 
 interface ButtonProps {
+  label?: string;
   children: React.ReactNode;
-  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-const Button = ({ children, ...rest }: ButtonProps) => {
+const Button = ({ label, children, ...rest }: ButtonProps) => {
   return (
     <ButtonContainer {...rest}>
       {children}
+      {label && <span>{label}</span>}
     </ButtonContainer>
   )
 }
