@@ -2,8 +2,8 @@ import UserHeader from "../../organisms/UserHeader";
 
 function UserProfile() {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <div style={{ width: '55vw' }}>
+    <div className="row">
+      <div className="col-6 col-offset-3">
         <UserHeader />
       </div>
     </div>

@@ -1,9 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 
+import Grid from './grid';
 import Utils from './utils';
 import ResetCSS from './reset';
 
 export const GlobalStyles = createGlobalStyle`
+  ${Grid}
   ${Utils}
   ${ResetCSS}
 

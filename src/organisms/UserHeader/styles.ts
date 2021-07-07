@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import sizes from "../../styles/medias";
+
 export const UserHeaderContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
@@ -8,9 +10,6 @@ export const UserHeaderContainer = styled.div`
   padding-top: 2.4rem;
 
   .main {
-    flex: 2;
-    min-width: 0;
-
     &-items {
       display: flex;
 
@@ -21,8 +20,6 @@ export const UserHeaderContainer = styled.div`
   }
 
   .owner {
-    flex-direction: row-reverse;
-
     .avatar {
       border: 2px dashed #ef52d1;
       border-radius: 100%;
@@ -44,6 +41,25 @@ export const UserHeaderContainer = styled.div`
 
     a, button:not(:first-child) {
       margin-left: 10px;
+    }
+  }
+
+  /* Mobile version */
+  @media (max-width: ${sizes.mobile}) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    .owner {
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem 0;
+      width: 100%;
+    }
+    
+    .actions {
+      display: flex;
+      justify-content: center;
     }
   }
 `;
