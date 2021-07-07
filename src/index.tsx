@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import './index.css';
 
 import Home from './pages/Home';
+import UserProfile from './pages/UserProfile';
 
 import { lightTheme } from './styles/theme';
 import { GlobalStyles } from './styles/global';
@@ -17,6 +18,7 @@ ReactDOM.render(
       <BrowserRouter>
         <Switch>
           <Route path="/" component={Home} exact />
+          <Route path="/users/:slug" component={UserProfile} />
         </Switch>
       </BrowserRouter>
     </ThemeProvider>

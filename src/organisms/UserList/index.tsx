@@ -1,15 +1,12 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom";
 
 import Card from "../../components/Card";
 
-interface User {
-  id: number;
-  login: string;
-  avatar_url: string;
-}
+import { User } from "../../utils/types";
 
 const UserList = () => {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState<User[]>([]);
   
   useEffect(() => {
     const fetchUsers = async () => {
@@ -23,20 +20,16 @@ const UserList = () => {
   }, [])
   
   return (
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <div style={{ width: '90vw' }}>
-        <h1 style={{ padding: '.8rem 0'}}>Lista de usuários</h1>
-
-        <div className="users-list-grid">
-          {users.map((user: User) => (
-            <Card
-              key={user.id}
-              image={user.avatar_url}
-              title={user.login}
-            />
-          ))}
-        </div>
-      </div>
+    <div className="users-list-grid">
+      {users.map((user) => (
+        <Link to={`users/${user.login}`}>
+          <Card
+            key={user.id}
+            image={user.avatar_url}
+            title={user.login}
+          />
+        </Link>
+      ))}
     </div>
   )
 }

@@ -17,6 +17,14 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.body};
   }
 
+  a {
+    text-decoration: none;
+  
+    &:focus, &:hover, &:visited, &:link, &:active {
+      text-decoration: none;
+   }
+  }
+
   .users-list-grid {
     display: grid;
     grid-gap: 2.5rem;
