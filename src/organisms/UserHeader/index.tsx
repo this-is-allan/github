@@ -69,7 +69,7 @@ const UserHeader = () => {
             </div>
           </div>
           <div className="actions">
-            <Button onClick={() => history.goBack()}>
+            <Button onClick={() => history.push('/')}>
               <ArrowBackThick size={18} color="#9c9c9b" />
             </Button>
             <a href={user?.html_url} target="_blank" rel="noreferrer">
