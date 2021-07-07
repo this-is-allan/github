@@ -37,9 +37,8 @@ const UserList = () => {
           : (
             <>
               {users.map((user) => (
-                <Link to={`users/${user.login}`}>
+                <Link to={`users/${user.login}`} key={user.id}>
                   <Card
-                    key={user.id}
                     image={user.avatar_url}
                     title={user.login}
                   />
