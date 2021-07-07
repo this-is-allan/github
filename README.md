@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Run the following command in the terminal:
 ```
-git clone git@github.com:this-is-allan/polen-test.git
-cd polen-test
+git clone git@github.com:this-is-allan/github.git
+cd github
 yarn && yarn start
 ```
